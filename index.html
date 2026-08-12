@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Macro Dashboard</title><style>*{box-sizing:border-box}html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:#fff;font-family:Arial,sans-serif}body{padding:4px}.grid{height:100vh;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:4px}.card{min-width:0;min-height:0;overflow:hidden}.tradingview-widget-container,.tradingview-widget-container__widget,iframe{width:100%;height:100%;border:0}@media(max-width:600px){body{overflow:auto}.grid{height:auto;grid-template-columns:1fr;grid-template-rows:none}.card{height:220px}}</style></head><body><div class="grid"><div class="card"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>{"symbols":[["S&P 500","FOREXCOM:SPXUSD"]],"chartOnly":false,"width":"100%","height":"100%","locale":"kr","colorTheme":"light","autosize":true,"showVolume":false,"showMA":false,"hideDateRanges":false,"dateRanges":["1m|30","3m|60","12m|1D","60m|1W","all|1M"],"hideMarketStatus":false,"hideSymbolLogo":false,"scalePosition":"right","scaleMode":"Normal"}</script></div></div>
-<div class="card"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>{"symbols":[["NASDAQ 100","FOREXCOM:NSXUSD"]],"chartOnly":false,"width":"100%","height":"100%","locale":"kr","colorTheme":"light","autosize":true,"showVolume":false,"showMA":false,"hideDateRanges":false,"dateRanges":["1m|30","3m|60","12m|1D","60m|1W","all|1M"],"hideMarketStatus":false,"hideSymbolLogo":false,"scalePosition":"right","scaleMode":"Normal"}</script></div></div>
-<div class="card"><iframe src="us2y.html" title="미국 국채 2년물 금리 (FRED:DGS2)"></iframe></div>
-<div class="card"><iframe src="us10y.html" title="미국 국채 10년물 금리 (FRED:DGS10)"></iframe></div>
-<div class="card"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>{"symbols":[["Gold","OANDA:XAUUSD"]],"chartOnly":false,"width":"100%","height":"100%","locale":"kr","colorTheme":"light","autosize":true,"showVolume":false,"showMA":false,"hideDateRanges":false,"dateRanges":["1m|30","3m|60","12m|1D","60m|1W","all|1M"],"hideMarketStatus":false,"hideSymbolLogo":false,"scalePosition":"right","scaleMode":"Normal"}</script></div></div>
-<div class="card"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>{"symbols":[["Silver","OANDA:XAGUSD"]],"chartOnly":false,"width":"100%","height":"100%","locale":"kr","colorTheme":"light","autosize":true,"showVolume":false,"showMA":false,"hideDateRanges":false,"dateRanges":["1m|30","3m|60","12m|1D","60m|1W","all|1M"],"hideMarketStatus":false,"hideSymbolLogo":false,"scalePosition":"right","scaleMode":"Normal"}</script></div></div>
-<div class="card"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>{"symbols":[["WTI","TVC:USOIL"]],"chartOnly":false,"width":"100%","height":"100%","locale":"kr","colorTheme":"light","autosize":true,"showVolume":false,"showMA":false,"hideDateRanges":false,"dateRanges":["1m|30","3m|60","12m|1D","60m|1W","all|1M"],"hideMarketStatus":false,"hideSymbolLogo":false,"scalePosition":"right","scaleMode":"Normal"}</script></div></div>
-<div class="card"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>{"symbols":[["DXY","INDEX:DXY"]],"chartOnly":false,"width":"100%","height":"100%","locale":"kr","colorTheme":"light","autosize":true,"showVolume":false,"showMA":false,"hideDateRanges":false,"dateRanges":["1m|30","3m|60","12m|1D","60m|1W","all|1M"],"hideMarketStatus":false,"hideSymbolLogo":false,"scalePosition":"right","scaleMode":"Normal"}</script></div></div>
-<div class="card"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>{"symbols":[["USD/KRW","FX_IDC:USDKRW"]],"chartOnly":false,"width":"100%","height":"100%","locale":"kr","colorTheme":"light","autosize":true,"showVolume":false,"showMA":false,"hideDateRanges":false,"dateRanges":["1m|30","3m|60","12m|1D","60m|1W","all|1M"],"hideMarketStatus":false,"hideSymbolLogo":false,"scalePosition":"right","scaleMode":"Normal"}</script></div></div></div></body></html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Macro Dashboard</title><style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%;height:100%;background:#fff;font-family:Arial,sans-serif}
+body{padding:4px}
+.grid{height:100vh;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+grid-template-rows:repeat(3,minmax(0,1fr));gap:6px}
+.cell{min-width:0;min-height:0;display:flex;flex-direction:column}
+.cell h2{margin:0 0 3px;font-size:12px;font-weight:700;color:#374151;white-space:nowrap}
+.cell iframe{flex:1;width:100%;border:0}
+@media(max-width:600px){
+html,body{height:auto}
+.grid{height:auto;grid-template-columns:1fr;grid-template-rows:none}
+.cell{height:240px}
+}
+</style></head><body><div class="grid">
+<div class="cell"><h2>S&P 500</h2><iframe src="sp500.html" title="S&P 500"></iframe></div>
+<div class="cell"><h2>NASDAQ 100</h2><iframe src="nasdaq.html" title="NASDAQ 100"></iframe></div>
+<div class="cell"><h2>미국 2Y 금리</h2><iframe src="tv2y.html" title="미국 2Y 금리"></iframe></div>
+<div class="cell"><h2>미국 10Y 금리</h2><iframe src="tv10y.html" title="미국 10Y 금리"></iframe></div>
+<div class="cell"><h2>금</h2><iframe src="gold.html" title="금"></iframe></div>
+<div class="cell"><h2>은</h2><iframe src="silver.html" title="은"></iframe></div>
+<div class="cell"><h2>WTI 원유</h2><iframe src="wti.html" title="WTI 원유"></iframe></div>
+<div class="cell"><h2>달러 인덱스</h2><iframe src="dxy.html" title="달러 인덱스"></iframe></div>
+<div class="cell"><h2>USD/KRW</h2><iframe src="usdkrw.html" title="USD/KRW"></iframe></div>
+</div></body></html>
