@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macro Dashboard</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+      background: white;
+    }
+
+    tv-market-overview {
+      display: block;
+      width: 100%;
+      min-height: 700px;
+    }
+  </style>
+</head>
+
+<body>
+
+<script
+  type="module"
+  src="https://widgets.tradingview-widget.com/w/kr/tv-market-overview.js">
+</script>
+
+<tv-market-overview
+  symbol-sectors='[
+    {
+      "sectionName":"Indices",
+      "symbols":[
+        "FOREXCOM:SPXUSD",
+        "FOREXCOM:NSXUSD",
+        "FOREXCOM:DJI",
+        "FOREXCOM:UKXGBP"
+      ]
+    },
+    {
+      "sectionName":"Stocks",
+      "symbols":[
+        "NASDAQ:AAPL",
+        "NASDAQ:NVDA"
+      ]
+    }
+  ]'>
+</tv-market-overview>
+
+</body>
+</html>
