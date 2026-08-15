@@ -25,6 +25,29 @@ tr.s0{background:#fbfefd}
 tr.s0 .tg{background:#e6f4f1;color:#0f766e}
 tr.s2 .tg{background:#fdf0e3;color:#b45309}
 .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:7px;
+ margin-bottom:6px}
+.cd{border:1px solid #e5e7eb;border-left:3px solid #cbd5e1;border-radius:7px;
+ padding:8px 10px;background:#fff}
+.cd.sp{border-left-color:#0f766e;background:#f7fcfb}
+.cd.sat{border-left-color:#d97706;background:#fffcf7}
+.cd.ea{border-left-color:#64748b}
+.c1{display:flex;align-items:center;gap:5px;margin-bottom:3px}
+.rk{font-size:10px;color:#9ca3af;min-width:13px}
+.cn{font-weight:700;font-size:12.5px;flex:1;overflow:hidden;text-overflow:ellipsis;
+ white-space:nowrap}
+.c2{display:flex;align-items:baseline;gap:5px}
+.c2 b{font-size:21px;line-height:1;color:#0f766e}
+.cd.sat .c2 b{color:#b45309}
+.cu{font-size:9.5px;color:#9ca3af}
+.cw{font-size:10px;color:#6b7280;margin-left:auto}
+.mtr{height:5px;background:#eef0f3;border-radius:3px;margin:5px 0 4px;overflow:hidden}
+.mtr i{display:block;height:100%;background:#0f766e}
+.cd.sat .mtr i{background:#d97706}
+.c3{font-size:10.5px;color:#6b7280}
+.c4{font-size:10.5px;color:#0f766e;margin-top:2px;overflow:hidden;
+ text-overflow:ellipsis;white-space:nowrap}
 .dim{color:#9ca3af}
 .w5 b{font-size:13px}
 .w5 .pc{display:block;font-size:9.5px;color:#9ca3af;line-height:1.1}
@@ -91,6 +114,105 @@ table.sub .u{color:#dc2626} table.sub .d{color:#2563eb}
  <input id="q" placeholder="종목·테마 검색  예: GOOGL, IONQ, 탱커" autocomplete="off">
  <span id="cnt"></span>
 </div>
+
+<h2>지금 신고가가 반복되는 곳 <em>— 최근 5거래일 참여율 순</em></h2>
+<div class="grid"><div class="cd sat">
+  <div class="c1"><span class="rk">1</span>
+    <span class="cn">Refiners</span>
+    <span class="tg">포화</span></div>
+  <div class="c2"><b>33%</b><span class="cu">5일 참여율</span>
+    <span class="cw">10회 / 6종목</span></div>
+  <div class="mtr"><i style="width:99%"></i></div>
+  <div class="c3">20일 18% · 12M +135%</div>
+  <div class="c4">★ DINO, PSX, MPC, VLO, PBF, DK</div></div><div class="cd sat">
+  <div class="c1"><span class="rk">2</span>
+    <span class="cn">엔드포인트 보안</span>
+    <span class="tg">포화</span></div>
+  <div class="c2"><b>20%</b><span class="cu">5일 참여율</span>
+    <span class="cw">5회 / 5종목</span></div>
+  <div class="mtr"><i style="width:60%"></i></div>
+  <div class="c3">20일 7% · 12M +40%</div>
+  <div class="c4">★ S, RBRK, CRWD, QLYS</div></div><div class="cd sat">
+  <div class="c1"><span class="rk">3</span>
+    <span class="cn">CRO·CDMO</span>
+    <span class="tg">포화</span></div>
+  <div class="c2"><b>20%</b><span class="cu">5일 참여율</span>
+    <span class="cw">5회 / 5종목</span></div>
+  <div class="mtr"><i style="width:60%"></i></div>
+  <div class="c3">20일 12% · 12M +26%</div>
+  <div class="c4">★ LH, DGX, CRL</div></div><div class="cd sat">
+  <div class="c1"><span class="rk">4</span>
+    <span class="cn">Biotechnology: In Vitro &amp; In Vivo Diagnostic Substances</span>
+    <span class="tg">포화</span></div>
+  <div class="c2"><b>17%</b><span class="cu">5일 참여율</span>
+    <span class="cw">5회 / 6종목</span></div>
+  <div class="mtr"><i style="width:51%"></i></div>
+  <div class="c3">20일 8% · 12M +77%</div>
+  <div class="c4">★ ORKA, CLDX, NEOG</div></div><div class="cd sp">
+  <div class="c1"><span class="rk">5</span>
+    <span class="cn">Integrated oil Companies</span>
+    <span class="tg">확산</span></div>
+  <div class="c2"><b>15%</b><span class="cu">5일 참여율</span>
+    <span class="cw">13회 / 17종목</span></div>
+  <div class="mtr"><i style="width:45%"></i></div>
+  <div class="c3">20일 8% · 12M +60%</div>
+  <div class="c4">★ PSX, MPC, VLO, CLMT, SUN, PBF, DK</div></div><div class="cd sp">
+  <div class="c1"><span class="rk">6</span>
+    <span class="cn">Biotechnology: Laboratory Analytical Instruments</span>
+    <span class="tg">확산</span></div>
+  <div class="c2"><b>13%</b><span class="cu">5일 참여율</span>
+    <span class="cw">6회 / 9종목</span></div>
+  <div class="mtr"><i style="width:39%"></i></div>
+  <div class="c3">20일 6% · 12M +31%</div>
+  <div class="c4">★ WAT, BIO, TXG</div></div><div class="cd ea">
+  <div class="c1"><span class="rk">7</span>
+    <span class="cn">시추</span>
+    <span class="tg">초기</span></div>
+  <div class="c2"><b>12%</b><span class="cu">5일 참여율</span>
+    <span class="cw">3회 / 5종목</span></div>
+  <div class="mtr"><i style="width:36%"></i></div>
+  <div class="c3">20일 3% · 12M +103%</div>
+  <div class="c4">★ HP</div></div><div class="cd ea">
+  <div class="c1"><span class="rk">8</span>
+    <span class="cn">Electronic Components</span>
+    <span class="tg">초기</span></div>
+  <div class="c2"><b>12%</b><span class="cu">5일 참여율</span>
+    <span class="cw">9회 / 15종목</span></div>
+  <div class="mtr"><i style="width:36%"></i></div>
+  <div class="c3">20일 3% · 12M +90%</div>
+  <div class="c4">★ P, NTAP, AVT, QMCO</div></div><div class="cd sp">
+  <div class="c1"><span class="rk">9</span>
+    <span class="cn">Cybersecurity</span>
+    <span class="tg">확산</span></div>
+  <div class="c2"><b>12%</b><span class="cu">5일 참여율</span>
+    <span class="cw">8회 / 13종목</span></div>
+  <div class="mtr"><i style="width:36%"></i></div>
+  <div class="c3">20일 4% · 12M +40%</div>
+  <div class="c4">★ S, PANW, RBRK, CRWD, NET, QLYS</div></div><div class="cd sp">
+  <div class="c1"><span class="rk">10</span>
+    <span class="cn">네트워크 보안</span>
+    <span class="tg">확산</span></div>
+  <div class="c2"><b>12%</b><span class="cu">5일 참여율</span>
+    <span class="cw">3회 / 5종목</span></div>
+  <div class="mtr"><i style="width:36%"></i></div>
+  <div class="c3">20일 4% · 12M +62%</div>
+  <div class="c4">★ PANW, NET</div></div><div class="cd sp">
+  <div class="c1"><span class="rk">11</span>
+    <span class="cn">옵저버빌리티</span>
+    <span class="tg">확산</span></div>
+  <div class="c2"><b>12%</b><span class="cu">5일 참여율</span>
+    <span class="cw">3회 / 5종목</span></div>
+  <div class="mtr"><i style="width:36%"></i></div>
+  <div class="c3">20일 5% · 12M +13%</div>
+  <div class="c4">★ S, DDOG</div></div><div class="cd ea">
+  <div class="c1"><span class="rk">12</span>
+    <span class="cn">Media/Streaming</span>
+    <span class="tg">초기</span></div>
+  <div class="c2"><b>10%</b><span class="cu">5일 참여율</span>
+    <span class="cw">3회 / 6종목</span></div>
+  <div class="mtr"><i style="width:30%"></i></div>
+  <div class="c3">20일 4% · 12M +4%</div>
+  <div class="c4">★ ROKU, LYV</div></div></div>
 
 <h2>지수 <em>— 구성종목 52주 신고가 − 신저가 · HLI = NH/(NH+NL)</em></h2>
 <table><thead><tr><th>지수</th><th class="num">종목</th><th class="num">신고가</th>
